@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: mywebsite
-        image: anas025/for-docker-app:dev-59
+        image: anas025/for-docker-app:dev-60
         ports:
         - containerPort: 80
