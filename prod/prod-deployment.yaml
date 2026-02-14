@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: mywebsite
-        image: anas025/for-docker-app:prod-latest  # Jenkins pipeline se replace hoga
+        image: anas025/for-docker-app:prod-${BUILD_NUMBER}  # Jenkins pipeline se replace hoga
         ports:
         - containerPort: 80
 ---
