@@ -6,6 +6,8 @@ metadata:
 spec:
   parentRefs:
     - name: mywebsite-gateway
+  hostnames:
+    - anasdevopssite.local
   rules:
     - matches:
         - path:
