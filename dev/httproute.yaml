@@ -7,7 +7,7 @@ spec:
   parentRefs:
     - name: mywebsite-gateway
   hostnames:
-    - anasdevopssite.local
+    - anasdevopssite.com
   rules:
     - matches:
         - path:
