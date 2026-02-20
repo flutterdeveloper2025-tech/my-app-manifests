@@ -20,22 +20,8 @@ spec:
         - containerPort: 80
         resources:
           requests:
-            cpu: "200m"
-            memory: "256Mi"
+            cpu: "100m"
+            memory: "128Mi"
           limits:
-            cpu: "1000m"
-            memory: "1Gi"
----
-apiVersion: v1
-kind: Service
-metadata:
-  name: mywebsite-service
-  namespace: prod
-spec:
-  type: LoadBalancer
-  selector:
-    app: mywebsite
-  ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 80
+            cpu: "500m"
+            memory: "512Mi"
