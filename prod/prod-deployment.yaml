@@ -18,6 +18,13 @@ spec:
         image: anas025/for-docker-app:prod-${BUILD_NUMBER}  # Jenkins pipeline se replace hoga
         ports:
         - containerPort: 80
+        resources:
+          requests:
+            cpu: "200m"
+            memory: "256Mi"
+          limits:
+            cpu: "1000m"
+            memory: "1Gi"
 ---
 apiVersion: v1
 kind: Service
